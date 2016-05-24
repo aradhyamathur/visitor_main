@@ -5,6 +5,8 @@ from django.core.validators import EmailValidator
 
 # Create your models here.
 
+# visitor class for models with usage of validators 
+
 
 class Visitor(md.Model):
     name = md.CharField(max_length=60)
