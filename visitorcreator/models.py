@@ -14,6 +14,7 @@ class Visitor(md.Model):
     email = md.CharField(max_length=255, validators=[EmailValidator])
     photo = md.ImageField(blank=True)
     phone_number = PhoneNumberField()
+    address = md.CharField(max_length=100)
     visitor_type = md.CharField(max_length=20, null=True)
     company_to_visit = md.CharField(max_length=60, null=True, blank=True)
     employee_to_visit = md.CharField(max_length=60, null=True, blank=True)
